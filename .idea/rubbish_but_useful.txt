@@ -1,0 +1,25 @@
+# ratio=np.round_(profit_arr/weight_arr,2)
+    # #detecting the index of the element with the highest p/w value
+    # print("the ratio p/w is: ",ratio)
+    # max_index = np.where(ratio == np.amax(ratio))
+    # print("the element with the highest p/w ratio is:",max_index)
+
+ #sorting the profit and weight series according to the ratio p/w in descending order
+    profit_sorted=profit.sort_values(ascending=False,key=lambda x:x/weight)
+
+    maxPr = profit_sorted[0]; #η τιμη με index 0
+    index=profit_sorted.index[0];  #το index στην θεση 0
+
+#In order to save print output in file:
+
+import sys
+
+# file = open('filename.txt', 'a')
+# sys.stdout = file
+
+......
+print statements
+....
+
+#save output
+# file.close()
